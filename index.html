@@ -89,10 +89,11 @@
                     <form action="https://api.staticforms.xyz/submit" method="post">
                         <!-- Replace with accesKey sent to your email -->
                         <input type="hidden" name="accessKey" value="6a3fdbfc-083b-4df4-be8b-dd594ae61167"> <!-- Required -->
-                        <input type="text" name="name" placeholder="name" required> <!-- Optional -->
+                        <input type="text" name="name"  placeholder="name" required> 
                         <input type="text" name="email"  placeholder="email" required> <!-- Optional -->
                         <textarea placeholder="your message" required rows="5"></textarea><br> <!-- Optional -->
                         <!-- If you want form to redirect to a specific url after submission -->
+                        <input type="hidden" name="redirectTo" value="https://www.lender.ml">
                         <button class="btn_one" value = "submit" >send</button>
                     </form>
                 </p>

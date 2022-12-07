@@ -81,7 +81,8 @@ body {
 #middle h1 {
     color:#fff;
     font-size:70px;
-    text-decoration:underline rgb(4, 102, 200);
+    text-decoration:underline;
+    text-decoration-color: rgb(4, 102, 200);
 }
 #about {
     width:10vw;

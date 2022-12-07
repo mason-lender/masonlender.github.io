@@ -86,12 +86,21 @@
             <section>
                 <h2>contact me</h2>
                 <p>
-                    <form action="mailto:mason.lender@gmail.com" method="post" enctype="text/plain" >
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one">send</button>
-                    </form> 
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <!-- Replace with accesKey sent to your email -->
+                        <input type="hidden" name="accessKey" value="6a3fdbfc-083b-4df4-be8b-dd594ae61167"> <!-- Required -->
+                        <input type="text" name="name"> <!-- Optional -->
+                        <input type="text" name="subject"> <!-- Optional -->
+                        <input type="text" name="email"> <!-- Optional -->
+                        <textarea placeholder="your message" required rows="5"></textarea><br> <!-- Optional -->
+                        <!-- If you want replyTo to be set to specific email -->
+                        <input type="text" name="replyTo" value="myreplytoemail@example.com"> <!-- Optional -->
+                        <!-- Specify @ as reply to value if you want it to be customers email -->
+                        <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                        <!-- If you want form to redirect to a specific url after submission -->
+                        <input type="hidden" name="redirectTo" value="www.lender.ml"> <!-- Optional -->
+                        <input type="submit" value="Submit" />
+                    </form>
                 </p>
             </section>
         </div>
